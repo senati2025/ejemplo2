@@ -6,14 +6,14 @@ const usuarios = [
       id: 1518271
     },
     {
-      nombre: "Luis Pérez",
-      direccion: "Av. Libertad 456, Ciudad B",
-      id: 102
+      nombre: "Maria Fatima",
+      direccion: "Mz K lote 3",
+      id: 1548358
     },
     {
-      nombre: "Marta Díaz",
-      direccion: "Calle Luna 789, Ciudad C",
-      id: 103
+      nombre: "Karel de la torre",
+      direccion: "Ancón ",
+      id: 1534541
     }
     {
       nombre: "Piero Javier Chacpi Tahua",
