@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Datos de Personas</h1>
+  <div id="contenedor-datos">
+    </div>
+
+  <script src="datos.js"></script>
+  <script>
+    const contenedorDatos = document.getElementById('contenedor-datos');
+    const datosPersonas = obtenerDatosPersonas(); // Si usaste la función en datos.js
+    // const datosPersonas = personas; // Si no usaste la función
+
+    datosPersonas.forEach(persona => {
+      const divPersona = document.createElement('div');
+      divPersona.innerHTML = `
+        <h3>${persona.nombre}</h3>
+        <p>Dirección: ${persona.direccion}</p>
+        <p>ID: ${persona.id}</p>
+        <hr>
+      `;
+      contenedorDatos.appendChild(divPersona);
+    });
+  </script>
+</body>
+</html>
+
