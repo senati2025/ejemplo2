@@ -15,6 +15,11 @@ const usuarios = [
       direccion: "Calle Luna 789, Ciudad C",
       id: 103
     }
+    {
+      nombre: "Piero Javier Chacpi Tahua",
+      direccion: "Calle Limoncillos 102 lote 16",
+      id: 1540314
+    }
   ];
   
   // Mostrar usuarios en el HTML
