@@ -1,19 +1,35 @@
-document.getElementById("formulario").addEventListener("submit", function(event) {
-    event.preventDefault();
+// Lista de usuarios (puedes agregar más)
+const usuarios = [
+    {
+      nombre: "ROJAS CHIROQUE GIACOMO",
+      direccion: "UCV 35 LOTE 32 HUAYCAN",
+      id: 1518271
+    },
+    {
+      nombre: "Luis Pérez",
+      direccion: "Av. Libertad 456, Ciudad B",
+      id: 102
+    },
+    {
+      nombre: "Marta Díaz",
+      direccion: "Calle Luna 789, Ciudad C",
+      id: 103
+    }
+  ];
   
-    const nombre = document.getElementById("nombreInput").value;
-    const direccion = document.getElementById("direccionInput").value;
-    const id = document.getElementById("idInput").value;
+  // Mostrar usuarios en el HTML
+  const resultadosContainer = document.getElementById("resultadosContainer");
   
-    document.getElementById("nombre").textContent = nombre;
-    document.getElementById("direccion").textContent = direccion;
-    document.getElementById("id").textContent = id;
+  usuarios.forEach(usuario => {
+    const item = document.createElement("div");
+    item.classList.add("resultado-item");
   
-    const mensaje = document.getElementById("mensaje");
-    mensaje.classList.add("visible");
+    item.innerHTML = `
+      <p><strong>Nombre:</strong> ${usuario.nombre}</p>
+      <p><strong>Dirección:</strong> ${usuario.direccion}</p>
+      <p><strong>ID:</strong> ${usuario.id}</p>
+    `;
   
-    setTimeout(() => {
-      mensaje.classList.remove("visible");
-    }, 3000);
+    resultadosContainer.appendChild(item);
   });
   
