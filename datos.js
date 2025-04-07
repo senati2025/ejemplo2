@@ -6,9 +6,9 @@ const usuarios = [
       id: 1518271
     },
     {
-      nombre: "Luis Pérez",
-      direccion: "Av. Libertad 456, Ciudad B",
-      id: 102
+      nombre: "Maria Fatima",
+      direccion: "Mz K lote 3",
+      id: 1548358
     },
     {
       nombre: "Karel de la torre",
