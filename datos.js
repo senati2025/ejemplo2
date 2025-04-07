@@ -11,9 +11,9 @@ const usuarios = [
       id: 102
     },
     {
-      nombre: "Marta Díaz",
-      direccion: "Calle Luna 789, Ciudad C",
-      id: 103
+      nombre: "Karel de la torre",
+      direccion: "Ancón ",
+      id: 1534541
     }
   ];
   
