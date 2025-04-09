@@ -1,4 +1,3 @@
-// Lista de usuarios (puedes agregar más)
 const usuarios = [
   {
     nombre: "Reiser Soplin Ramos",
@@ -27,7 +26,6 @@ const usuarios = [
   }
 ];
 
-// Mostrar usuarios en el HTML
 const resultadosContainer = document.getElementById("resultadosContainer");
 
 usuarios.forEach(usuario => {
