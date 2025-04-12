@@ -1,0 +1,102 @@
+/* estilos.css */
+
+/* General */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    background-color: #f7f7f7;
+    color: #333;
+    padding: 50px;
+}
+
+/* Título principal */
+h1 {
+    font-size: 2.5em;
+    color: #222;
+    margin-bottom: 30px;
+}
+
+/* Botones de opciones */
+button {
+    background-color: #e0e0e0;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 20px;
+    margin: 10px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+    background-color: #d4d4d4;
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+/* Resultados */
+#resultado {
+    margin-top: 30px;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+/* Emoji antes del texto en los botones */
+button span {
+    margin-right: 8px;
+}
+/* estilos.css */
+
+/* General */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    background-color: #f7f7f7;
+    color: #333;
+    padding: 50px;
+}
+
+/* Título principal */
+h1 {
+    font-size: 2.5em;
+    color: #222;
+    margin-bottom: 30px;
+}
+
+/* Botones de opciones */
+button {
+    background-color: #e0e0e0;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 20px;
+    margin: 10px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+    background-color: #d4d4d4;
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+/* Resultados */
+#resultado {
+    margin-top: 30px;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+/* Emoji antes del texto en los botones */
+button span {
+    margin-right: 8px;
+}

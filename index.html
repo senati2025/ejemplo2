@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Piedra, Papel o Tijera</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <h1>Elige tu opción:</h1>
+
+    <button onclick="jugar('piedra')"><span>🪨</span> Piedra</button>
+    <button onclick="jugar('papel')"><span>📄</span> Papel</button>
+    <button onclick="jugar('tijera')"><span>✂️</span> Tijera</button>
+
+    <div id="resultado"></div>
+
+    <script>
+        function jugar(eleccionUsuario) {
+            const opciones = ['piedra', 'papel', 'tijera'];
+            const eleccionComputadora = opciones[Math.floor(Math.random() * 3)];
+
+            let resultado = `La computadora eligió: ${eleccionComputadora}<br>`;
+
+            if (eleccionUsuario === eleccionComputadora) {
+                resultado += "¡Empate!";
+            } else if (
+                (eleccionUsuario === 'piedra' && eleccionComputadora === 'tijera') ||
+                (eleccionUsuario === 'papel' && eleccionComputadora === 'piedra') ||
+                (eleccionUsuario === 'tijera' && eleccionComputadora === 'papel')
+            ) {
+                resultado += "¡Ganaste!";
+            } else {
+                resultado += "¡Perdiste!";
+            }
+
+            document.getElementById('resultado').innerHTML = resultado;
+        }
+    </script>
+</body>
+</html>
